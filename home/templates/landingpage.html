@@ -1,0 +1,149 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DzoNext</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="{% static 'images/logo.png' %}" alt="Logo"/>
+      <span><strong>Dzo</strong><span class="highlight">Next</span></span>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <button class="btn-outline">Sign up</button>
+      <button class="btn-outline">Login</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main id="home" class="hero-section">
+    <div class="text-content">
+      <h1>Write Faster & Do more<br>with Dzo<span class="highlight">Next</span></h1>
+      <p>
+        More with Dzo<span class="highlight">Next</span>, A single syllable and multiple syllabic word <span class="highlight">ས་སྨུག་སྤུབས།</span> 
+        require 6 and 22 key presses respectively with Dzo<span class="highlight">Next</span>, write faster, more, and save time by reducing keypresses.
+      </p>
+      <button class="get-started">&lt; Get Started /&gt;</button>
+    </div>
+    <div class="image-content">
+      <div class="image-row">
+        <img src="{% static 'images/hero-img.png' %}" alt="home" class="img-top-left" />
+        <img src="{% static 'images/values-3.png' %}" alt="home" class="img-top-right" />
+      </div>
+      <img src="{% static 'images/features.png' %}" alt="home" class="img-bottom" />
+    </div>
+  </main>
+
+  <!-- Collaboration Banner -->
+  <div class="collaboration-banner">
+    <p>This project is done as the collaboration between College of Science and Technology and Department of Culture & Dzongkha Development.</p>
+  </div>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <p class="section-description">
+      Our web applications leverage advanced NLP techniques and machine learning to enable better communication, accessibility, and understanding of the Dzongkha language.
+    </p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="{% static 'images/translation.png' %}" alt="Translation">
+        <h3>Dzongkha Translation</h3>
+        <p>
+          Facilitates the translation of text between Dzongkha and English with a focus on Dzongkha-to-English translations, breaking down language barriers.
+        </p>
+      </div>
+      <div class="project-card">
+        <img src="{% static 'images/asr.png' %}" alt="ASR">
+        <h3>Dzongkha ASR</h3>
+        <p>
+          Automatic Speech Recognition converts spoken Dzongkha into written text using advanced ASR technology.
+        </p>
+      </div>
+      <div class="project-card">
+        <img src="{% static 'images/tts.png' %}" alt="TTS">
+        <h3>Dzongkha Text-To-Speech</h3>
+        <p>
+          Converts written text into natural-sounding Dzongkha speech for an immersive audio experience.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About DzoNext</h2>
+    <p>
+      DzoNext is a collaborative effort aiming to preserve and promote Dzongkha, the national language of Bhutan, through cutting-edge NLP and AI technologies.
+    </p>
+  </section>
+
+  <!-- Footer -->
+    <footer class="footer">
+    <div class="footer-container">
+      <!-- Our Location -->
+      <div class="footer-section">
+        <h3>Our Location</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.186363439228!2d89.53651711453691!3d26.86052708314971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e1dd7a7c5a60e7%3A0xf329a2f6b4931f98!2sCollege%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sbt!4v1628842149815!5m2!1sen!2sbt" 
+          width="250" 
+          height="150" 
+          style="border:0; border-radius: 8px;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Address -->
+      <div class="footer-section">
+        <h3>Address</h3>
+        <p>College of Science and Technology<br>
+          Rinchending, Phuentsholing<br>
+          📧 info.cst@rub.edu.bt<br>
+          📞 +975 02-325226<br>
+          🌐 <a href="https://www.cst.edu.bt" target="_blank">www.cst.edu.bt</a>
+        </p>
+      </div>
+
+      <!-- Feedback -->
+      <div class="footer-section">
+        <h3>Give Feedback</h3>
+        <button class="feedback-btn">Send Feedback</button>
+      </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      &copy; 2025 College of Science and Technology. All Rights Reserved.
+    </div>
+  </footer>
+
+
+  <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
